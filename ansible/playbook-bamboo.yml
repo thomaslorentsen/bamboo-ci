@@ -1,0 +1,10 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - copy: content='hello world' dest=/tmp/test
+  - debug: msg='Example 1 from within a playbook play'
+
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - debug: msg='Example 2 from within a playbook play'

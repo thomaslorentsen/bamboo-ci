@@ -1,0 +1,7 @@
+- name: Install EPEL
+  yum:
+    name: epel-release
+
+- name: Install Ansible
+  yum:
+    name: ansible
